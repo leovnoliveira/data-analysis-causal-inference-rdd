@@ -1,0 +1,23 @@
+[project]
+name = "rdd"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "leovnoliveira",email = "consultoria1.ceo@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "statsmodels (>=0.14.4,<0.15.0)",
+    "plotnine (<=0.13.6)",
+    "patchworklib (>=0.6.5,<0.7.0)"
+]
+
+[tool.poetry]
+packages = [{include = "rdd", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
