@@ -18,9 +18,7 @@ O **Regression Discontinuity Design (RDD)** é uma estratégia econométrica ava
 
 A especificação empírica do modelo pode ser representada como:
 
-\[
-Y_i = \beta_0 + \beta_1 \cdot (X_i - c) + \beta_2 \cdot D_i + \beta_3 \cdot D_i \cdot (X_i - c) + \epsilon_i
-\]
+![Fórmula Matemática](https://latex.codecogs.com/png.latex?Y_i%20%3D%20%5Cbeta_0%20%2B%20%5Cbeta_1%20%5Ccdot%20%28X_i%20-%20c%29%20%2B%20%5Cbeta_2%20%5Ccdot%20D_i%20%2B%20%5Cbeta_3%20%5Ccdot%20D_i%20%5Ccdot%20%28X_i%20-%20c%29%20%2B%20%5Cepsilon_i)
 
 Onde:
 - \( Y_i \): Variável dependente (mortalidade).
