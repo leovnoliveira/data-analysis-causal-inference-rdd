@@ -56,8 +56,8 @@ Os parâmetros de interesse são:
 
 1. Clone o repositório:
      ```bash
-     git clone <URL_DO_REPOSITORIO>
-     cd <NOME_DO_REPOSITORIO>
+     git clone git@github.com:leovnoliveira/data-analysis-causal-inference-rdd.git
+     cd data-analysis-causal-inference-rdd
      ```
 
 2. Configure o ambiente Python:
