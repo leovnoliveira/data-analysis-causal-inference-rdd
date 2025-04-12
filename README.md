@@ -18,18 +18,18 @@ O **Regression Discontinuity Design (RDD)** é uma estratégia econométrica ava
 
 A especificação empírica do modelo pode ser representada como:
 
-![Fórmula Matemática](https://latex.codecogs.com/png.latex?Y_i%20%3D%20%5Cbeta_0%20%2B%20%5Cbeta_1%20%5Ccdot%20%28X_i%20-%20c%29%20%2B%20%5Cbeta_2%20%5Ccdot%20D_i%20%2B%20%5Cbeta_3%20%5Ccdot%20D_i%20%5Ccdot%20%28X_i%20-%20c%29%20%2B%20%5Cepsilon_i)
+    Yᵢ = β₀ + β₁ · (Xᵢ − c) + β₂ · Dᵢ + β₃ · Dᵢ · (Xᵢ − c) + εᵢ
 
 Onde:
-- \( Y_i \): Variável dependente (mortalidade).
-- \( X_i \): Variável contínua (idade).
-- \( c \): Ponto de corte (21 anos).
-- \( D_i \): Dummy que indica se \( X_i \geq c \).
-- \( \epsilon_i \): Termo de erro.
+- **Yᵢ**: Variável dependente (mortalidade).
+- **Xᵢ**: Variável contínua (idade).
+- **c**: Ponto de corte (21 anos).
+- **Dᵢ**: Dummy que indica se Xᵢ ≥ c.
+- **εᵢ**: Termo de erro.
 
 Os parâmetros de interesse são:
-- \( \beta_2 \): Captura o salto na variável dependente no ponto de corte.
-- \( \beta_3 \): Captura a diferença nas inclinações acima e abaixo do ponto de corte.
+- **β₂**: Captura o salto na variável dependente no ponto de corte.
+- **β₃**: Captura a diferença nas inclinações acima e abaixo do ponto de corte.
 
 ### Estratégias de Amostragem
 
