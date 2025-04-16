@@ -51,6 +51,30 @@ Os parâmetros de interesse são:
 ## Estrutura do Repositório
 
 - **notebooks/**: Contém o notebook principal que documenta todo o processo de análise, passo a passo, incluindo a preparação dos dados, a especificação do modelo RDD e a interpretação dos resultados.
+- **image/**: Contém os gráficos e visualizações gerados durante a análise.
+
+### 1. **Visualização do Kernel Triangular**
+Foi utilizado um **kernel triangular** para ponderar os dados próximos ao ponto de corte (21 anos). A figura abaixo ilustra a forma funcional do kernel.
+É facil ver que quanto mais próximo da idade de corte, maior é o peso atribuído ao indivíduo, ilustrando a importancia que buscamos dar para as observações próximas ao ponto de corte.
+
+![Kernel Triangular](image/geogebra_triangular_kernel.PNG)
+
+### 2. **Impacto do Consumo de Álcool na Mortalidade**
+Os resultados indicam um aumento significativo na mortalidade geral e em causas específicas (acidentes de trânsito e suicídio) após o ponto de corte. Abaixo, apresentamos os gráficos de regressão que mostram a relação entre idade e mortalidade para diferentes causas:
+
+#### Mortalidade por Todas as Causas
+![Mortalidade por Todas as Causas](image/rdd_all_mva_suicide.png)
+
+#### Mortalidade Ajustada pelo Kernel Triangular
+![Mortalidade Ajustada pelo Kernel](image/rdd_all_trinagule_kernel.png)
+
+### 3. **Análise por Causa de Morte**
+A análise detalhada revelou descontinuidades significativas em causas específicas de mortalidade, como acidentes de trânsito e suicídio. O gráfico abaixo resume a relação entre idade e mortalidade por diferentes causas:
+
+![Idade e Mortalidade por Causa](image/plot_age_mortality_cause.png)
+
+Esses resultados reforçam a robustez da metodologia RDD para identificar efeitos causais em torno de um ponto de corte bem definido.
+
 
 ## Como Clonar e Replicar a Análise
 
