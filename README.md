@@ -1,4 +1,4 @@
-# README: Replicação do Estudo de Carpenter e Dobkin (2009)
+## Replicação do Estudo de Carpenter e Dobkin (2009)
 
 ## Introdução
 
